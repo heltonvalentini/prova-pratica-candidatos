@@ -15,7 +15,7 @@ foram levantados os seguintes requisitos funcionais e não funcionais.
 
 - O aplicativo deverá permitir o login do usuário
 - Após logado o aplicativo permitirá que o usuário adicione seus logins em sites para
-serem armazenados de forma segura apenas no dispositivo, as informações
+serem armazenados de forma "segura". As informações
 solicitadas serão:
   - url do site
   - usuário/e-mail
