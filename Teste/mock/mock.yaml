@@ -1,0 +1,146 @@
+-  request:
+      url: /services/Teste/auth
+      method: POST
+      json: '{
+                  "username": "80700208",
+                  "password": "22222"
+            }'
+      headers: 
+            content-type: application/json
+   response:
+      file: post/authentication.json
+
+-  request:
+      url: /services/Teste/summary/sales
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 7,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/sales/mySales.json
+
+-  request:
+      url: /services/Teste/summary/sales
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 15,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/sales/mySales_15.json
+
+-  request:
+      url: /services/Teste/summary/sales
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 30,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/sales/mySales_30.json
+
+-  request:
+      url: /services/Teste/summary/earnings
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 7,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/earnings/myEarnings.json
+      
+-  request:
+      url: /services/Teste/summary/earnings
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 15,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/earnings/myEarnings_15.json
+
+-  request:
+      url: /services/Teste/summary/earnings
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 30,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/earnings/myEarnings_30.json
+
+-  request:
+      url: /services/Teste/summary/future-earnings
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 7,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/futureEarnings/myEarningsFuture.json
+
+-  request:
+      url: /services/Teste/summary/future-earnings
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 15,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/futureEarnings/myEarningsFuture_15.json
+
+-  request:
+      url: /services/Teste/summary/future-earnings
+      method: POST
+      headers:
+         Content-Type: application/json
+         X-Session-Data: eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas
+      json: '{
+            "days": 30,
+            "cgc": "04528732000100",
+            "cgcCpf": "04528732000100",
+            "dominio": 11
+            }'
+   response:
+      file: post/resumo/futureEarnings/myEarningsFuture_30.json

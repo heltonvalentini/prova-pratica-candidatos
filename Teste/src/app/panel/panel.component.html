@@ -1,0 +1,101 @@
+<div class="{{activeMenu ? 'block-menu' : ''}}" (click)="setToogle()">
+</div>
+  <aside id="menu-lateral" class="borda menu-l laranjaPanel {{activeMenu ? 'tog-menu' : ''}}">
+    <nav id="icone-menu" class="borda ic-menu laranjaPanel" (click)="setToogle()"><em
+                         class="borda fa {{activeMenu ? 'fa-mail-reply' : 'fa-bars'}}" arial-hidden="true"></em></nav>
+    <nav id="menus-ct">
+      <ul [hidden]="!getName()">
+        <a [routerLink]="['resumo/vendas']">
+          <li tooltipPlacement="right" tooltip="Resumo" [tooltipDisabled]="activeMenu" (click)="activeMenu = false">
+            <em class="borda fa fa-address-book" arial-hidden="true"></em><span>resumo</span>
+          </li>
+        </a>
+      </ul>
+      <ul>
+        <a [routerLink]="['/logout']">
+          <li tooltip="Deslogar" tooltipPlacement="right" [tooltipDisabled]="activeMenu" (click)="activeMenu = false"><em
+                                 class="borda fa fa-sign-out fa-rotate-180" arial-hidden="true"></em><span>deslogar</span></li>
+        </a>
+      </ul>
+    </nav>
+  </aside>
+
+<section class="borda conteudo">
+  <header class="borda h-panel">
+    <div class="borda logo-panel">
+    </div>
+    <div class="dados-usuario">
+      <em data-toggle="modal" data-target="#user-dados_m" class="fa fa-user-circle" arial-hidden="true"></em>
+	  <!--Dados do usuário WEB-->
+      <span class="dados-user" [hidden]="isBackofficeAccess()">
+        <span>Seja bem vindo!</span>
+        
+        <span>{{getName()}}</span>
+        <span>{{(getCgc() ? getCgc() : '') | topattern:'99.999.999/9999-99'}}</span>
+        <span><strong>Último Acesso: </strong>{{getLastAccess()}}</span>
+      </span>
+
+      <!--Dados do colaborador-->
+      <span class="dados-user" [hidden]="!isBackofficeAccess()">
+        <span>Seja bem vindo <strong>{{getNameColaborador()}}</strong>!</span>
+        <br />
+          <span>{{getName()}}</span>
+	    </span>
+    </div>
+    <div class="at-header borda">
+    </div>
+  </header>
+</section>
+<section class="borda bl-conteudo {{toogle ? 'overflow' : ''}}">
+  <router-outlet></router-outlet>
+</section>
+<!--Dados de usuário Mobile-->
+<section id="user-dados">
+  <div class="modal resp-box fade" id="user-dados_m" tabindex="-1" role="dialog"
+                                                                   aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">seus dados</h4>
+        </div>
+        <div class="modal-body">
+          <span class="dados-user-m" [hidden]="isBackofficeAccess()">
+            <span>Seja bem vindo!</span>
+            <span>{{getName()}}</span>
+            <span>{{(getCgc() ? getCgc() : '') | topattern:'99.999.999/9999-99'}}</span>
+            <span><strong>Último Acesso: </strong>{{getLastAccess()}}</span>
+          </span>
+            
+          <span class="dados-user-m" [hidden]="!isBackofficeAccess()">
+            <span>Seja bem vindo <strong>{{getNameColaborador()}}</strong>!</span>
+            
+
+            <span [hidden]="getName() ? false : true">Conveniada identificada: <strong>{{getName()}}</strong></span>
+            <span [hidden]="getName() ? false : true">{{(getCgc() ? getCgc() : '') | topattern:'99.999.999/9999-99'}}</span>
+            <span [hidden]="getName() ? false : true"><strong>Último Acesso da Conveniada: </strong>{{getLastAccess()}}</span>
+          </span>
+        </div>
+        <div class="clear"></div>
+        <div class="modal-footer">
+          <button type="button" class="botao right openB" data-dismiss="modal">FECHAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mensagemDados" class="modalcomponente">
+  <div class="modal resp-box fade" id="mensagemDados_md" tabindex="-1" role="dialog"
+       aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div style="padding: 15px; text-align: center; font-size: 2em; color: #0D3349;">Não esqueça de manter seus dados cadastrais atualizados no menu “Administração > Dados Cadastrais”</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="botao right openB" data-dismiss="modal">FECHAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

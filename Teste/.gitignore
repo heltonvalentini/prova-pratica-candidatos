@@ -1,0 +1,15 @@
+/node_modules/
+/.settings/
+/.project
+/.tern-project
+/npm-debug.log
+/dist/
+/build/
+/target/
+*.swp
+*.swo
+*.idea
+*.history
+*npm-debug.log*
+.vscode/launch.json
+package-lock.json
