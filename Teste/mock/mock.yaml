@@ -11,7 +11,7 @@
       file: post/authentication.json
 
 -  request:
-      url: /services/agilli/summary/sales
+      url: /services/Teste/summary/sales
       method: POST
       headers:
          Content-Type: application/json
@@ -26,7 +26,7 @@
       file: post/resumo/sales/mySales.json
 
 -  request:
-      url: /services/agilli/summary/sales
+      url: /services/Teste/summary/sales
       method: POST
       headers:
          Content-Type: application/json
@@ -41,7 +41,7 @@
       file: post/resumo/sales/mySales_15.json
 
 -  request:
-      url: /services/agilli/summary/sales
+      url: /services/Teste/summary/sales
       method: POST
       headers:
          Content-Type: application/json
@@ -56,7 +56,7 @@
       file: post/resumo/sales/mySales_30.json
 
 -  request:
-      url: /services/agilli/summary/earnings
+      url: /services/Teste/summary/earnings
       method: POST
       headers:
          Content-Type: application/json
@@ -71,7 +71,7 @@
       file: post/resumo/earnings/myEarnings.json
       
 -  request:
-      url: /services/agilli/summary/earnings
+      url: /services/Teste/summary/earnings
       method: POST
       headers:
          Content-Type: application/json
@@ -86,7 +86,7 @@
       file: post/resumo/earnings/myEarnings_15.json
 
 -  request:
-      url: /services/agilli/summary/earnings
+      url: /services/Teste/summary/earnings
       method: POST
       headers:
          Content-Type: application/json
@@ -101,7 +101,7 @@
       file: post/resumo/earnings/myEarnings_30.json
 
 -  request:
-      url: /services/agilli/summary/future-earnings
+      url: /services/Teste/summary/future-earnings
       method: POST
       headers:
          Content-Type: application/json
@@ -116,7 +116,7 @@
       file: post/resumo/futureEarnings/myEarningsFuture.json
 
 -  request:
-      url: /services/agilli/summary/future-earnings
+      url: /services/Teste/summary/future-earnings
       method: POST
       headers:
          Content-Type: application/json
@@ -131,7 +131,7 @@
       file: post/resumo/futureEarnings/myEarningsFuture_15.json
 
 -  request:
-      url: /services/agilli/summary/future-earnings
+      url: /services/Teste/summary/future-earnings
       method: POST
       headers:
          Content-Type: application/json
