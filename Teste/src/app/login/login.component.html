@@ -1,0 +1,64 @@
+<div class="bg-home">
+    <section id="login-page" class="ct-agilli">
+        <div class="bl-agilli">
+            <!--logo 180 x 88-->
+            <div class="info-login">
+                <div class="logo-agilli"></div>
+                <div class="clear"></div>
+                <form id="portalAgLogin" [formGroup]="loginForm">
+                    <fieldset>
+                        <label>
+                            <legend class="input-group">LOGIN</legend>
+                            <input class="form-control width100 mask" name="login-agilli" type="text"
+                                   [formControl]="loginForm.controls.username" required id="login-agilli"
+                                   autofocus aria-hidden="true" title="Cnpj" [maxLength]="30">
+                        </label>
+                        <label>
+                            <legend>senha</legend>
+                            <input required class="form-control" [maxLength]="5" name="password-agilli" type="password"
+                                   [formControl]="loginForm.controls.password" id="password-agilli"
+                                   autofocus maxlength="50" title="Senha">
+                        </label>
+                        <div class="clear"></div>
+                        <div class="act-form">
+                            <button type="button" class="botao esqueci-senha" data-toggle="modal"
+                                    data-target="#myModal">
+                                esqueci minha senha
+                            </button>
+                            <input class="botao laranja" type="submit" (click)="login(loginForm.value)" name="logar"
+                                   id="logar" value="acessar" [disabled]="!loginForm.valid">
+                        </div><!-- //act-form -->
+                    </fieldset>
+                </form>
+
+                <section id="esqueci-senha-modal">
+                    <div class="modal fade" style="left: 0 !important;" id="myModal" tabindex="-1" role="dialog"
+                         aria-labelledby="myModalLabel">
+                        <form [formGroup]="forgotPassForm">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">informe o cnpj ou cpf:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <input class="form-control width100" name="esqueci-agilli" type="text"
+                                               [formControl]="forgotPassForm.controls.username" required id="esqueci-agilli" mask="integer" title="CPF / CNPJ" [maxLength]="18">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" name="envia-esquecisenha" id="envia-esquecisenha"
+                                                class="botao"
+                                                (click)="forgotMyPass(forgotPassForm.value)"
+                                                [disabled]="!forgotPassForm.valid">
+                                            enviar senha
+                                        </button>
+                                        <button type="button" class="botao " data-dismiss="modal" (click)="this.forgotPassForm.reset()">cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div><!-- //content-login -->
+    </section><!-- //login-page -->
+</div>

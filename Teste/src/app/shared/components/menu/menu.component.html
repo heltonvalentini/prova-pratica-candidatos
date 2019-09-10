@@ -1,0 +1,9 @@
+<aside id="submenu-p" class="borda subm-p">
+  <nav class="">
+    <ul>
+      <div *ngFor="let menu of menus">
+        <a *ngIf="allowedMenu(menu)" [routerLink]="menu.route"><li><em class="borda fa {{menu.icon}}" aril-hidden="true"></em><span>{{menu.description}}</span></li></a>
+      </div>
+    </ul>
+  </nav>
+</aside>

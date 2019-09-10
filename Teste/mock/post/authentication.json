@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "value": {
+    "user": "80700208",
+    "name": "POSTO NOVA BARRA LTDA",
+    "cgc": "04528732000100",
+    "lastlogin": 1490363807000,
+    "token": "eyJhbGciOiJIUzI1NiJ9.ODA3MDAyMDg7JDJhJDEwJDhOcWJpNURYVkgzeGlhNE9Pd3RtbE96YVZaMDlySGxOSmI0a0RCejFaUHJkLkpJc2FSUWV1OzIwMTctMDQtMjdUMTY6MDI6NTMuOTI2.i11ll1b5SJnyVZdDX2vk67ehgwI_xzcVb7mpIli0KC4",
+    "dominio": 11,
+    "listProducts": null,
+    "segmentos": [
+      {
+        "id": 15,
+        "desc": "SIAG - ABASTECIMENTO"
+      }
+    ],
+    "session": "eyJhbGciOiJIUzI1NiJ9.MjswODs4MDc7MjAxNy0wNC0wM1QxNjowMjo1My4zNDk.qNeaDNMDYyEaEfgzlqVrqPBZMaRgomTAgIPhYTzdtas"
+  },
+  "message": "Seja bem vindo ao portal Ágilli!"
+}
