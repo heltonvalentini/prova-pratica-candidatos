@@ -50,7 +50,7 @@ As variáveis que podem ser utilizadas são:
 - **DEFAULT\_****API\_****PORT**: Define a porta padrão para Kiss Api;
 - **DEFAULT\_****STORAGE\_****HOST**: Define o 'host' padrão para Storage de Arquivos;
 - **DEFAULT\_****STORAGE\_****PORT**: Define a porta padrão para Storage de Arquivos;
-- **API\_****URL**: Define o namespace padrão para os Serviços Agilli da Kiss API;
+- **API\_****URL**: Define o namespace padrão para os Serviços da API;
 - **STORAGE\_****URL**: Define o namespace padrão para o Storage de Arquivos.
 
 
@@ -133,5 +133,5 @@ Para gerar o war da aplicação basta compactar os arquivos gerados na pasta "di
 
 ```shell
 $ cd dist
-$ zip -r portal-agilli.war *
+$ zip -r portal-cadastro.war *
 ```
